@@ -5,18 +5,21 @@ import { AppComponent } from './app.component';
 import { ProductsListComponent } from './products-list/products-list.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { LoginPageComponent } from './login-page/login-page.component';
+import { AppRoutingModule } from './app-routing.module';
+  
 @NgModule({
   declarations: [
     AppComponent,
     ProductsListComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    LoginPageComponent
   ],
   imports: [
-    BrowserModule, ReactiveFormsModule
+    BrowserModule, ReactiveFormsModule, AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { } 
