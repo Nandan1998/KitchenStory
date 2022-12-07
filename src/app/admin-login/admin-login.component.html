@@ -7,7 +7,7 @@
                 <h3 class="mb-5">Administrator Sign in</h3>
 
                     <div class="form-outline mb-4">
-                        <form id="login-form" class="form">
+                        <form id="login-form" class="form" [formGroup]="loginForm" (ngSubmit)="login()">
                     
                                 <label for="username" class="form-label">Username: </label>
                                 <input formControlName="username" type="text" class="form-control" id="username">

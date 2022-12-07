@@ -10,6 +10,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { WelcomepageComponent } from './welcomepage/welcomepage.component';
+import { CartComponent } from './cart/cart.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
   
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { WelcomepageComponent } from './welcomepage/welcomepage.component';
     FooterComponent,
     LoginPageComponent,
     AdminLoginComponent,
-    WelcomepageComponent
+    WelcomepageComponent,
+    CartComponent,
+    AdminDashboardComponent
   ],
   imports: [
     BrowserModule, ReactiveFormsModule, AppRoutingModule, HttpClientModule
