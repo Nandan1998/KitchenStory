@@ -12,10 +12,13 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { WelcomepageComponent } from './welcomepage/welcomepage.component';
 import { CartComponent } from './cart/cart.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { AdminOptionsComponent } from './admin-options/admin-options.component';
+
+
   
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent, 
     ProductsListComponent,
     HeaderComponent,
     FooterComponent,
@@ -23,7 +26,9 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
     AdminLoginComponent,
     WelcomepageComponent,
     CartComponent,
-    AdminDashboardComponent
+    AdminDashboardComponent,
+    AdminOptionsComponent,
+    
   ],
   imports: [
     BrowserModule, ReactiveFormsModule, AppRoutingModule, HttpClientModule

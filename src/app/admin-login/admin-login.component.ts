@@ -36,7 +36,7 @@ export class AdminLoginComponent implements OnInit {
        if(user){
          alert("Login success");
          this.loginForm.reset();
-         this.router.navigate(['/admindashboard']);
+         this.router.navigate(['/adminoptions']);
        } else{
          alert("Invalid credentials. Please try again!!!");
        }
