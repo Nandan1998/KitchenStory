@@ -6,7 +6,9 @@
 .search-icon{
     position: absolute;
     z-index: 10;
-    
+}
+.navbar-right{
+    float: right;
 }
 
 

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { ProductsListComponent } from './products-list/products-list.component';
 import { HeaderComponent } from './header/header.component';
@@ -13,6 +13,9 @@ import { WelcomepageComponent } from './welcomepage/welcomepage.component';
 import { CartComponent } from './cart/cart.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { AdminOptionsComponent } from './admin-options/admin-options.component';
+import { FilterPipe } from './shared/filter.pipe';
+import { CheckoutComponent } from './checkout/checkout.component';
+
 
 
   
@@ -28,10 +31,11 @@ import { AdminOptionsComponent } from './admin-options/admin-options.component';
     CartComponent,
     AdminDashboardComponent,
     AdminOptionsComponent,
-    
+    FilterPipe,
+    CheckoutComponent,   
   ],
   imports: [
-    BrowserModule, ReactiveFormsModule, AppRoutingModule, HttpClientModule
+    BrowserModule, ReactiveFormsModule, AppRoutingModule, HttpClientModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

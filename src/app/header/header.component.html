@@ -22,9 +22,12 @@
           <li class="nav-item">
             <a class="nav-link" routerLink="/adminlogin">Admin Login</a>
           </li>
-          <button routerLink="/cart" type="button" class="btn btn-default btn-sm">
+           <input class="form-control" (keyup)="search($event)" [(ngModel)] = "searchTerm" type="text" placeholder="Search products">
+           <div class="navbar-right">
+           <button routerLink="/cart" type="button" class="btn btn-default btn-sm">
             <span class="glyphicon glyphicon-folder-close">Items in Cart: {{totalItem}}</span>
           </button>
+        </div>
         </ul>
       </div>
     </div> 

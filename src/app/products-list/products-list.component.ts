@@ -10,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class ProductsListComponent implements OnInit{
 
   public productList:any;
+  searchKey:string = "";
   constructor(private api : ProductServiceService, private cartService: CartService){}
 
   ngOnInit(): void {
@@ -20,7 +21,10 @@ export class ProductsListComponent implements OnInit{
         this.productList.forEach((a:any)=> {
           Object.assign(a,{quantity:1, total:a.price})
         });
-      })
+      });
+        this.cartService.search.subscribe((val: any)=>{
+          this.searchKey = val;
+        })
   }
 
   addtoCart(product: any){
