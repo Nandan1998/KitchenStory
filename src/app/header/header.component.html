@@ -1,3 +1,10 @@
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #4ba0dd;">
     <div class="container-fluid">
       <a class="navbar-brand" routerLink="">Kitchen Story</a>
@@ -15,13 +22,14 @@
           <li class="nav-item">
             <a class="nav-link" routerLink="/adminlogin">Admin Login</a>
           </li>
+          <button routerLink="/cart" type="button" class="btn btn-default btn-sm">
+            <span class="glyphicon glyphicon-folder-close">Items in Cart: {{totalItem}}</span>
+          </button>
         </ul>
       </div>
-    <div class="form-group">
-      <input type="text" class="form-control" placeholder="Search products">
-    </div>
-    <span class="fas fa-search search-icon"></span>
-    </div>   
+    </div> 
   </nav>
+  </body>
+
 
   
