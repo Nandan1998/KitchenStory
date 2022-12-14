@@ -1,3 +1,4 @@
+import { CartService } from './services/cart.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -15,6 +16,7 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
 import { AdminOptionsComponent } from './admin-options/admin-options.component';
 import { FilterPipe } from './shared/filter.pipe';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
 
 
 
@@ -32,12 +34,13 @@ import { CheckoutComponent } from './checkout/checkout.component';
     AdminDashboardComponent,
     AdminOptionsComponent,
     FilterPipe,
-    CheckoutComponent,   
+    CheckoutComponent,
+    ConfirmationComponent,   
   ],
   imports: [
     BrowserModule, ReactiveFormsModule, AppRoutingModule, HttpClientModule, FormsModule
   ],
-  providers: [],
+  providers: [CartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { } 

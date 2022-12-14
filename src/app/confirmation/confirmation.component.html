@@ -1,0 +1,51 @@
+<section class="h-100 h-custom" style="background-color: #eee;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-lg-8 col-xl-6">
+          <div class="card border-top border-bottom border-3" style="border-color: #f37a27 !important;">
+            <div class="card-body p-5">
+  
+              <p class="lead fw-bold mb-5" style="color: #f37a27;">Purchase Receipt</p>
+  
+              <div class="row">
+                <div class="col mb-3">
+                  <p class="small text-muted mb-1">Date: {{read}}</p>
+                </div>
+              </div>
+  
+              <div class="mx-n5 px-5 py-4" style="background-color: #f2f2f2;">
+                <div class="row">
+                  <div class="col-md-8 col-lg-9">
+                    <p>Your order is on the way</p>
+                    <p><td><strong>Payment of Rs {{grandTotal}} recieved!!!</strong></td></p>
+                  </div>
+                </div>
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Sr. No</th>
+                            <th>Product Name</th>
+                            <th>Product Image</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let product of product; let i = index">
+                            <td>{{i+1}}</td>
+                            <td>{{product.productname}}</td>
+                            <td><img style="width: 120px;" src="{{product.image}}"></td>
+                            <td style="width: 25%;">{{product.ingredients}}</td>
+                            <td style="width: 12%;">{{product.price}}</td>
+                            <td style="width: 12%;">{{product.quantity}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

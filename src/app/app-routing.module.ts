@@ -1,3 +1,5 @@
+import { ConfirmationComponent } from './confirmation/confirmation.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 import { AdminOptionsComponent } from './admin-options/admin-options.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { CartComponent } from './cart/cart.component';
@@ -16,7 +18,9 @@ const routes: Routes = [
   {path:'adminlogin', component: AdminLoginComponent},
   {path:'admindashboard', component: AdminDashboardComponent},
   {path:'adminoptions', component: AdminOptionsComponent},
-  {path:'cart', component: CartComponent}
+  {path:'cart', component: CartComponent},
+  {path:'checkout', component: CheckoutComponent},
+  {path:'confirmation', component: ConfirmationComponent}
 ];
 
 @NgModule({

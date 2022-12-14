@@ -1,17 +1,21 @@
 import { CartService } from './../services/cart.service';
+import { CheckoutComponent } from './../checkout/checkout.component';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-checkout',
-  templateUrl: './checkout.component.html',
-  styleUrls: ['./checkout.component.css']
+  selector: 'app-confirmation',
+  templateUrl: './confirmation.component.html',
+  styleUrls: ['./confirmation.component.css']
 })
-export class CheckoutComponent implements OnInit{
 
-  constructor(private cartService: CartService){}
+export class ConfirmationComponent implements OnInit {
 
   public product:any = [];
   public grandTotal: number;
+
+  constructor(private cartService: CartService){}
+
+  read:Date = new Date;
 
   ngOnInit(): void{
     this.cartService.getProducts()
@@ -21,8 +25,16 @@ export class CheckoutComponent implements OnInit{
     })
   }
 
-  getData(val){
-    console.log(val);
-  }
-
 }
+
+
+
+
+
+  
+    
+  
+
+
+
+
