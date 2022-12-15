@@ -6,14 +6,7 @@ import { CartService } from './../services/cart.service';
 })
 export class CheckoutService {
 
-  public GST:number = 10;
-  public deliveryCharge:number = 15;
-  public total:number;
 
   constructor(private cartService: CartService) { }
 
-  surchargeAmount(){
-    return this.total = this.GST + this.deliveryCharge;
-    console.log(this.total);
-  }
 }

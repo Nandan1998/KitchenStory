@@ -1,4 +1,3 @@
-import { Admin } from '../interfaces/admin';
 import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
