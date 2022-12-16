@@ -17,6 +17,7 @@ export class AdminInsertComponent implements OnInit{
   onSubmit(f:NgForm){
     this.insertService.insertProduct(f.value).subscribe((res:string)=>{
       console.log(res);
+      alert("The product is inserted successfully !!!");
     })
   }
 
